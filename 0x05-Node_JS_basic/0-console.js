@@ -1,10 +1,12 @@
 #!/usr/bin/node 
-
-// Define the displayMessage function
+/**
+ * Display a message to STDOUT.
+ * @param {string} message - The message to be displayed.
+ */
 function displayMessage(message) {
-  console.log(message); // Print the message to STDOUT
+  console.log(message);
 }
 
-// Export the function to make it accessible from other files
+// Export the displayMessage function
 module.exports = displayMessage;
 
