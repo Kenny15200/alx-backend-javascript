@@ -6,7 +6,7 @@ async function handleProfileSignup() {
     const [photoResponse, userResponse] = await Promise.all([uploadPhoto(), createUser()]);
     console.log(`${photoResponse.body} ${userResponse.firstName} ${userResponse.lastName}`);
   } catch (error) {
-    console.error("Signup system offline");
+    console.error('Signup system offline');
   }
 }
 
