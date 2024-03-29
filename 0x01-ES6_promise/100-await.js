@@ -6,13 +6,13 @@ async function asyncUploadUser() {
     const [photoResponse, userResponse] = await Promise.all([uploadPhoto(), createUser()]);
     return {
       photo: photoResponse,
-      user: userResponse
+      user: userResponse,
     };
   } catch (error) {
     console.error(error); // Log the error for debugging purposes
     return {
       photo: null,
-      user: null
+      user: null,
     };
   }
 }
