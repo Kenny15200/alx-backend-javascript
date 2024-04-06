@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 class Building {
   constructor(sqft) {
     this._sqft = sqft;
@@ -9,7 +10,12 @@ class Building {
     return this._sqft;
   }
 
-  // Static method evacuationWarningMessage
+  // Method to display full price
+  displayFullPrice() {
+    return `${this._amount} ${this._currency.name} (${this._currency.code})`;
+  }
+
+  // Method that throws error to enforce method overrid
   static evacuationWarningMessage() {
     throw new Error('Class extending Building must override evacuationWarningMessage');
   }
