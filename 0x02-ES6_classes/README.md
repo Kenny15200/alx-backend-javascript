@@ -1,20 +1,21 @@
 
 Curriculum
 Short Specializations
-Average: 12.71%
+Average: 12.81%
+You have a captain's log due before 2024-05-05 (in 1 day)! Log it now!
 0x02. ES6 classes
 OOP
 JavaScript
 ES6
  Weight: 1
- Project over - took place from Mar 7, 2024 6:00 AM to Mar 8, 2024 6:00 AM
+ Project over - took place from Mar 6, 2024 11:00 PM to Mar 7, 2024 11:00 PM
  An auto review will be launched at the deadline
 In a nutshell…
-Auto QA review: 0.0/33 mandatory & 0.0/3 optional
-Altogether:  0.0%
-Mandatory: 0.0%
+Auto QA review: 8.5/33 mandatory & 0.0/3 optional
+Altogether:  25.76%
+Mandatory: 25.76%
 Optional: 0.0%
-Calculation:  0.0% + (0.0% * 0.0%)  == 0.0%
+Calculation:  25.76% + (25.76% * 0.0%)  == 25.76%
 
 
 Resources
@@ -68,7 +69,7 @@ Don’t forget to run $ npm install when you have the package.json
 Tasks
 0. You used to attend a place like this at some point
 mandatory
-Score: 0.0% (Checks completed: 0.0%)
+Score: 50.0% (Checks completed: 100.0%)
 Implement a class named ClassRoom:
 
 Prototype: export default class ClassRoom
@@ -88,10 +89,10 @@ Repo:
 GitHub repository: alx-backend-javascript
 Directory: 0x02-ES6_classes
 File: 0-classroom.js
-    
+   
 1. Let's make some classrooms
 mandatory
-Score: 0.0% (Checks completed: 0.0%)
+Score: 33.33% (Checks completed: 66.67%)
 Import the ClassRoom class from 0-classroom.js.
 
 Implement a function named initializeRooms. It should return an array of 3 ClassRoom objects with the sizes 19, 20, and 34 (in this order).
@@ -170,7 +171,7 @@ File: 2-hbtn_course.js
     
 3. Methods, static methods, computed methods names..... MONEY
 mandatory
-Score: 0.0% (Checks completed: 0.0%)
+Score: 50.0% (Checks completed: 100.0%)
 Implement a class named Currency:
 
 - Constructor attributes:
@@ -194,10 +195,10 @@ Repo:
 GitHub repository: alx-backend-javascript
 Directory: 0x02-ES6_classes
 File: 3-currency.js
-    
+   
 4. Pricing
 mandatory
-Score: 0.0% (Checks completed: 0.0%)
+Score: 33.33% (Checks completed: 66.67%)
 Import the class Currency from 3-currency.js
 
 Implement a class named Pricing:
@@ -233,7 +234,7 @@ File: 4-pricing.js
     
 5. A Building
 mandatory
-Score: 0.0% (Checks completed: 0.0%)
+Score: 33.33% (Checks completed: 66.67%)
 Implement a class named Building:
 
 Constructor attributes:
@@ -271,7 +272,7 @@ File: 5-building.js
     
 6. Inheritance
 mandatory
-Score: 0.0% (Checks completed: 0.0%)
+Score: 25.0% (Checks completed: 50.0%)
 Import Building from 5-building.js.
 
 Implement a class named SkyHighBuilding that extends from Building:
@@ -304,7 +305,7 @@ File: 6-sky_high.js
     
 7. Airport
 mandatory
-Score: 0.0% (Checks completed: 0.0%)
+Score: 50.0% (Checks completed: 100.0%)
 Implement a class named Airport:
 
 Constructor attributes:
@@ -329,10 +330,10 @@ Repo:
 GitHub repository: alx-backend-javascript
 Directory: 0x02-ES6_classes
 File: 7-airport.js
-    
+   
 8. Primitive - Holberton Class
 mandatory
-Score: 0.0% (Checks completed: 0.0%)
+Score: 50.0% (Checks completed: 100.0%)
 Implement a class named HolbertonClass:
 
 Constructor attributes:
@@ -358,7 +359,7 @@ Repo:
 GitHub repository: alx-backend-javascript
 Directory: 0x02-ES6_classes
 File: 8-hbtn_class.js
-    
+   
 9. Hoisting
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
@@ -509,4 +510,44 @@ GitHub repository: alx-backend-javascript
 Directory: 0x02-ES6_classes
 File: 10-car.js
     
+11. EVCar
+#advanced
+Score: 0.0% (Checks completed: 0.0%)
+Import Car from 10-car.js.
+
+Implement a class named EVCar that extends the Car class:
+
+Constructor attributes:
+brand (String)
+motor (String)
+color (String)
+range (String)
+Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
+For privacy reasons, when cloneCar is called on a EVCar object, the object returned should be an instance of Car instead of EVCar.
+bob@dylan:~$ cat 100-main.js
+import EVCar from './100-evcar.js';
+
+const ec1 = new EVCar("Tesla", "Turbo", "Red", "250");
+console.log(ec1);
+
+const ec2 = ec1.cloneCar();
+console.log(ec2);
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 100-main.js
+EVCar {
+  _brand: 'Tesla',
+  _motor: 'Turbo',
+  _color: 'Red',
+  _range: '250'
+}
+Car { _brand: undefined, _motor: undefined, _color: undefined }
+bob@dylan:~$ 
+Repo:
+
+GitHub repository: alx-backend-javascript
+Directory: 0x02-ES6_classes
+File: 100-evcar.js
+    
 Copyright © 2024 ALX, All rights reserved.
+
