@@ -4,7 +4,7 @@ const readline = require('readline');
 // Create an interface to read input from stdin and output to stdout
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
 
 // Display the initial message
