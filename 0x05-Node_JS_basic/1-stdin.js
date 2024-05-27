@@ -2,10 +2,14 @@
 const readline = require('readline');
 
 // Create an interface to read input from stdin and output to stdout
-const rl= readline.createInterface({input: process.stdin,output: process.stdout
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
 });
+
 // Display the initial message
 console.log('Welcome to Holberton School, what is your name?');
+
 // Listen for input from the user
 rl.on('line', (input) => {
   // Display the user's name
@@ -18,3 +22,4 @@ rl.on('line', (input) => {
 rl.on('close', () => {
   console.log('This important software is now closing');
 });
+
