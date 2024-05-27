@@ -12,8 +12,12 @@ console.log('Welcome to Holberton School, what is your name?');
 
 // Listen for input from the user
 rl.on('line', (input) => {
-  // Display the user's name
-  console.log(`Your name is: ${input}`);
+  if (input.trim()) {
+    // Display the user's name
+    console.log(`Your name is: ${input}`);
+  } else {
+    console.log('No name entered.');
+  }
   // Close the readline interface
   rl.close();
 });
