@@ -1,0 +1,7 @@
+function calculateNumber(a, b) {
+  const result = Math.ceil(a) + Math.ceil(b);
+  return (result);
+ }
+
+
+module.exports = calculateNumber;

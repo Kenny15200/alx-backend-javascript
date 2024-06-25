@@ -1,8 +1,7 @@
-#!/usr/bin/node
-
 // test with maths calculations
 function calculateNumber(a, b) {
-  return Math.round(a) + Math.round(b);
+  const Math.round(a) + Math.round(b);
+	return (result);
 }
 
 module.exports = calculateNumber;
