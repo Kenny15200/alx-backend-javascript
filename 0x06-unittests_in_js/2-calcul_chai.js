@@ -14,4 +14,4 @@ function calculateNumber (type, a, b) {
   }
 }
 
-module.exports = calculateNumber;i
+module.exports = calculateNumber;

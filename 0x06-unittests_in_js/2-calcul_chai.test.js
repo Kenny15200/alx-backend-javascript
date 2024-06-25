@@ -1,21 +1,38 @@
-const calculateNumber = require('./1-calcul');
-const chai = require('chai');
-const expect = chai.expect;
+// 2-calcul_chai.test.js
 
-describe('calculateNumber', function () {
-  it('return the SUM of a rounded number', function () {
-    const Summed = calculateNumber('SUM', 1.4, 4.5);
-    expect(Summed).to.be.equal(6);
+// Use dynamic import for chai
+const chaiImport = async () => {
+  const { expect } = await import('chai');
+  return { expect };
+};
+
+const calculateNumber = require('./2-calcul_chai');
+
+describe('calculateNumber', () => {
+  describe('SUM', () => {
+    it('should return 6 when inputs are 1.4 and 4.5', async () => {
+      const { expect } = await chaiImport();
+      expect(calculateNumber('SUM', 1.4, 4.5)).to.equal(6);
+    });
   });
-  it('return the sub of a rounded number', function () {
-    const subtracted = calculateNumber('SUBTRACT', 1.4, 4.5);
-    expect(subtracted).to.be.equal(-4);
+
+  describe('SUBTRACT', () => {
+    it('should return -4 when inputs are 1.4 and 4.5', async () => {
+      const { expect } = await chaiImport();
+      expect(calculateNumber('SUBTRACT', 1.4, 4.5)).to.equal(-4);
+    });
   });
-  it('return divided value of a rounded number', function () {
-    const Divided = calculateNumber('DIVIDE', 1.4, 4.5);
-    expect(Divided).to.be.equal(0.2);
-  });
-  it('return the div of a rounded number', function () {
-    const Divided = calculateNumber('DIVIDE', 1.4, 0);
+
+  describe('DIVIDE', () => {
+    it('should return 0.2 when inputs are 1.4 and 4.5', async () => {
+      const { expect } = await chaiImport();
+      expect(calculateNumber('DIVIDE', 1.4, 4.5)).to.equal(0.2);
+    });
+
+    it('should return "Error" when b is 0', async () => {
+      const { expect } = await chaiImport();
+      expect(calculateNumber('DIVIDE', 1.4, 0)).to.equal('Error');
+    });
   });
 });
+
