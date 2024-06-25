@@ -1,7 +1,6 @@
-// test with maths calculations
+// 0-calcul.js
 function calculateNumber(a, b) {
-  let Math.round(a) + Math.round(b);
-	return (result);
+    return Math.round(a) + Math.round(b);
 }
 
 module.exports = calculateNumber;
