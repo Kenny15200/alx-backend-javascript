@@ -1,0 +1,15 @@
+{
+  "name": "alx-backend-javascript",
+  "version": "1.0.0",
+  "description": "Curriculum Short Specializations Average: 24.79% 0x06. Unittests in JS UnitTests Back-end JavaScript ES6 NodeJS ExpressJS Mocha  Weight: 1  Project over - took place from Apr 30, 2024 12:00 AM to May 3, 2024 12:00 AM  An auto review will be launched at the deadline In a nutshell… Auto QA review: 0.0/64 mandatory Altogether:  0.0% Mandatory: 0.0% Optional: no optional tasks",
+  "main": "0-calcul.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.4.0"
+  }
+}
