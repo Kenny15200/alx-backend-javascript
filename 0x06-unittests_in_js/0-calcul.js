@@ -1,6 +1,6 @@
 // test with maths calculations
 function calculateNumber(a, b) {
-  const Math.round(a) + Math.round(b);
+  let Math.round(a) + Math.round(b);
 	return (result);
 }
 
