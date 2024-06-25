@@ -1,20 +1,28 @@
-const calculateNumber = require('./1-calcul');
+// 1-calcul.test.js
 const assert = require('assert');
+const calculateNumber = require('./1-calcul');
 
-describe('calculateNumber', function () {
-  it('return the SUM of a rounded number', function () {
-    const Summed = calculateNumber('SUM', 1.4, 4.5);
-    assert.strictEqual(Summed, 6);
+describe('calculateNumber', () => {
+  describe('SUM', () => {
+    it('should return 6 when inputs are 1.4 and 4.5', () => {
+      assert.strictEqual(calculateNumber('SUM', 1.4, 4.5), 6);
+    });
   });
-  it('return the sub of a rounded number', function () {
-    const subtracted = calculateNumber('SUBTRACT', 1.4, 4.5);
-    assert.strictEqual(subtracted, -4);
+
+  describe('SUBTRACT', () => {
+    it('should return -4 when inputs are 1.4 and 4.5', () => {
+      assert.strictEqual(calculateNumber('SUBTRACT', 1.4, 4.5), -4);
+    });
   });
-  it('return divided value of a rounded number', function () {
-    const Divided = calculateNumber('DIVIDE', 1.4, 4.5);
-    assert.strictEqual(Divided, 0.2);
-  });
-  it('return the div of a rounded number', function () {
-    const Divided = calculateNumber('DIVIDE', 1.4, 0);
+
+  describe('DIVIDE', () => {
+    it('should return 0.2 when inputs are 1.4 and 4.5', () => {
+      assert.strictEqual(calculateNumber('DIVIDE', 1.4, 4.5), 0.2);
+    });
+
+    it('should return "Error" when b is 0', () => {
+      assert.strictEqual(calculateNumber('DIVIDE', 1.4, 0), 'Error');
+    });
   });
 });
+
